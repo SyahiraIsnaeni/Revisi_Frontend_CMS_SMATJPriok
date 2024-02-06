@@ -665,6 +665,10 @@ video {
   margin-left: 0.25rem;
 }
 
+.mt-2\.5{
+  margin-top: 0.625rem;
+}
+
 .block{
   display: block;
 }
