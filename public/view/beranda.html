@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <title>SMA Tanjung Priok Jakarta</title>
     <link rel="icon" href="..//assets/logo.png" type="image/png" />
-    <!-- <link href="/public/css/output.css" rel="stylesheet" /> -->
-    <link href="../css/index.css" rel="stylesheet" />
+    <link href="/public/css/output.css" rel="stylesheet" />
+    <!-- <link href="../css/index.css" rel="stylesheet" /> -->
 
     <!-- PENTING!!!! -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -62,8 +62,25 @@
           <a
             href="#"
             class="text-white py-2.5 block text-center text-sm hover:text-[#FF8B42]"
-            >Data</a
+            id="dataDropdownHP"
           >
+            Data
+            <div
+              class="hidden absolute -mt-12 -left-28 bg-[#FF8B42] p-2 w-28 rounded-l-md font-medium"
+              id="dataDropdownContentHP"
+            >
+              <a
+                href="guru.html"
+                class="block text-black hover:text-[#FF8B42] py-1 -mt-5 text-[13px] text-center"
+                >Data Guru</a
+              >
+              <a
+                href="staf.html"
+                class="block text-black hover:text-[#FF8B42] py-1 text-[13px] text-center"
+                >Data Staf</a
+              >
+            </div>
+          </a>
           <a
             href="konten.html"
             class="text-white py-2.5 block text-center text-sm hover:text-[#FF8B42]"
@@ -104,11 +121,24 @@
           <a href="profil.html">
             <p class="hover:text-[#FF8B42]">Profil</p>
           </a>
-          <a href="#">
-            <p class="hover:text-[#FF8B42]">Data</p>
+          <a href="#" id="dataDropdown1" class="relative block">
+            <p class="hover:text-[#FF8B42]">Data Sekolah</p>
+            <div
+              class="hidden font-medium absolute bg-[#FF8B42] xl:mt-[49px] text-center lg:mt-[48px] mt-[42px] px-4 py-4 w-[100px] lg:w-[120px] rounded-b-md shadow-md text-xs lg:text-[13px] xl:text-[14px] -ml-8"
+              id="dataDropdownContent1"
+            >
+              <a href="guru.html" class="block text-black hover:font-bold py-1"
+                >Data Guru</a
+              >
+              <a
+                href="staf.html"
+                class="block text-black hover:font-bold py-1 mt-2"
+                >Data Staf</a
+              >
+            </div>
           </a>
           <a href="konten.html">
-            <p class="hover:text-[#FF8B42]">Konten</p>
+            <p class="hover:text-[#FF8B42]">konten</p>
           </a>
           <a href="https://frontend-e-learning.web.app/view/login/siswa.html">
             <p class="hover:text-[#FF8B42]">E-Learning</p>
@@ -118,6 +148,15 @@
 
       <script>
         document
+          .getElementById("dataDropdownHP")
+          .addEventListener("click", function () {
+            var dropdownContentHP1 = document.getElementById(
+              "dataDropdownContentHP"
+            );
+            dropdownContentHP1.classList.toggle("hidden");
+          });
+
+        document
           .getElementById("toggleButton")
           .addEventListener("click", function () {
             document.getElementById("mobileMenu").classList.toggle("hidden");
@@ -125,10 +164,19 @@
               .getElementById("mobileMenu")
               .classList.toggle("animate-slide-right"); // Tambahkan kelas animasi
           });
+
+        document
+          .getElementById("dataDropdown1")
+          .addEventListener("click", function (event) {
+            event.preventDefault();
+            var dropdownContent = document.getElementById(
+              "dataDropdownContent1"
+            );
+            dropdownContent.classList.toggle("hidden");
+          });
       </script>
     </nav>
 
     <!-- CAROUSEL -->
-
   </body>
 </html>
