@@ -862,6 +862,10 @@ video {
   gap: 1.25rem;
 }
 
+.overflow-x-auto{
+  overflow-x: auto;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
@@ -1174,8 +1178,18 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300{
   transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
 }
 
 .ease-in-out{
@@ -1219,6 +1233,11 @@ video {
   .sm\:my-16{
     margin-top: 4rem;
     margin-bottom: 4rem;
+  }
+
+  .sm\:my-4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .sm\:mb-0{
@@ -1265,12 +1284,24 @@ video {
     display: grid;
   }
 
+  .sm\:h-\[150px\]{
+    height: 150px;
+  }
+
   .sm\:h-\[380px\]{
     height: 380px;
   }
 
+  .sm\:h-\[450px\]{
+    height: 450px;
+  }
+
   .sm\:w-1\/2{
     width: 50%;
+  }
+
+  .sm\:w-\[150px\]{
+    width: 150px;
   }
 
   .sm\:grid-cols-2{
@@ -1297,6 +1328,16 @@ video {
   .sm\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 

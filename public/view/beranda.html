@@ -347,7 +347,7 @@
     </section>
 
     <!-- EKSTRAKURIKULER -->
-    <section class="relative mt-16 sm:mt-20 h-[430px] sm:h-[450px]">
+    <section class="relative mt-16 sm:mt-20 h-[430px] sm:h-[450px] md:h-[400px] lg:h-[420px] xl:h-[450px]">
       <!-- Div untuk overlay warna -->
       <div
         class="absolute top-0 left-0 w-full h-full bg-[#0D464B] bg-opacity-90 z-10"
@@ -356,14 +356,15 @@
       <img
         src="../assets/school-AI1.jpg"
         alt="School"
-        class="top-0 left-0 w-full z-0 opacity-80 object-cover object-center h-[430px] sm:h-[450px]"
+        class="top-0 left-0 w-full z-0 opacity-80 object-cover object-center h-[430px] sm:h-[450px] md:h-[400px] lg:h-[420px] xl:h-[450px]"
       />
+      <!-- TAMPILAN HP -->
       <div class="block md:hidden absolute top-0 left-0 w-full my-8 z-20">
         <h1 class="text-white text-center font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[33px] xl:text-4xl">
           Kegiatan Ekstrakurikuler
         </h1>
         <!-- INI YANG AKAN DIGESER -->
-        <ul id="slider" class="flex overflow-x-auto transition-transform ease-in-out duration-500">
+        <ul id="slider" class="flex">
           <li class="mx-5 sm:mx-8">
             <div class="flex justify-center items-center my-3 sm:my-4">
               <img
@@ -377,9 +378,7 @@
             <p
               class="text-center text-white font-light text-[12.5px] sm:text-sm  mt-2"
             >
-              Rohis SMA Tanjung Priok Jakarta adalah tempat para siswa berkumpul
-              untuk mengeksplorasi dan memperdalam ajaran islam dalam kehidupan
-              sehari-hari.
+            Futsal SMA Tanjung Priok adalah kegiatan yang bertujuan untuk mengembangkan keterampilan bermain futsal dan memupuk nilai-nilai seperti kerjasama tim, disiplin, dan komitmen.
             </p>
             <div class="flex justify-center items-center mt-2 sm:mt-3">
               <a href="#">
@@ -445,7 +444,7 @@
             <p
               class="text-center text-white font-light text-[12.5px] sm:text-sm  mt-2"
             >
-            Ekstrakurikuler tari daerah di SMA Tanjung Priok adalah salah satu kegiatan yang memungkinkan siswa untuk mempelajari, mengembangkan, dan mempertahankan warisan budaya tari daerah Indonesia.
+            Tari daerah SMA Tanjung Priok adalah salah satu kegiatan yang memungkinkan siswa untuk mempelajari dan mempertahankan warisan budaya tari daerah Indonesia.
             </p>
             <div class="flex justify-center items-center mt-2 sm:mt-3">
               <a href="#">
@@ -523,6 +522,187 @@
           }
         </script>
       </div>
+      <!-- TAMPILAN TABLET DAN LAPTOP -->
+      <div class="md:block hidden absolute top-0 left-0 w-full my-12 lg:my-16 z-20">
+        <h1 class="text-white text-center font-semibold md:text-3xl lg:text-[33px] xl:text-4xl">
+          Kegiatan Ekstrakurikuler
+        </h1>
+        <div class="flex md:mx-10 lg:mx-16 xl:mx-20">
+          <button onclick="prev2()" class="rounded-full p-1 mr-4 lg:mr-6 xl:mr-8 transition ease-in-out hover:scale-110">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              class="w-8 h-8 lg:w-10 lg:h-10 "
+              fill="#fff"
+            >
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+              />
+            </svg>
+          </button>
+          <!-- INI YANG AKAN DIGESER -->
+          <ul id="slider2" class="mt-3">
+            <li class="flex">
+              <div class="flex justify-center items-center my-3 sm:my-4">
+                <img
+                  src="../assets/ekskul.png"
+                  class="w-[210px] h-[210px] lg:w-[230px] lg:h-[230px] xl:w-[260px] xl:h-[260px] items-center object-cover object-center"
+                />
+                <div class="ml-6 xl:ml-8">
+                  <h1 class="text-white font-semibold text-[19px] lg:text-[22px] xl:text-[26px]">
+                    Futsal SMA Tanjung Priok
+                  </h1>
+                  <p
+                    class=" text-white font-light text-[14.5px] lg:text-base xl:text-lg mt-3 "
+                  >
+                  Futsal SMA Tanjung Priok adalah kegiatan yang bertujuan untuk mengembangkan keterampilan bermain futsal dan memupuk nilai-nilai seperti kerjasama tim, disiplin, dan komitmen.
+                  </p>
+                  <div class="mt-4 flex">
+                    <a href="#">
+                      <p class="text-[14.5px] lg:text-base xl:text-[17px] font-medium text-white underline">
+                        Selengkapnya
+                      </p>
+                    </a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      class="mt-[3px] ml-1 w-4 h-4"
+                      fill="#fff"
+                    >
+                      <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="hidden">
+              <div class="flex">
+                <div class="flex justify-center items-center my-3 sm:my-4">
+                  <img
+                    src="../assets/logo-paskib.png"
+                    class="w-[210px] h-[210px] lg:w-[230px] lg:h-[230px] xl:w-[260px] xl:h-[260px]  items-center object-cover object-center"
+                  />
+                  <div class="ml-6 xl:ml-8">
+                    <h1 class="text-white font-semibold text-[19px] lg:text-[22px] xl:text-[26px]">
+                      Paskibra SMA Tanjung Priok
+                    </h1>
+                    <p
+                      class=" text-white font-light text-[14.5px] lg:text-base xl:text-lg mt-3"
+                    >
+                    Pasukan Pengibar Bendera SMA Tanjung Priok adalah sebuah unit kegiatan ekstrakurikuler di SMA Tanjung Priok Jakarta yang bertanggung jawab atas kegiatan berkaitan dengan upacara resmi.
+                    </p>
+                    <div class="mt-4 flex">
+                      <a href="#">
+                        <p class="text-[14.5px] lg:text-base xl:text-[17px] font-medium text-white underline">
+                          Selengkapnya
+                        </p>
+                      </a>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                        class="mt-[3px] ml-1 w-4 h-4"
+                        fill="#fff"
+                      >
+                        <path
+                          d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="hidden">
+              <div class="flex">
+                <div class="flex justify-center items-center my-3 sm:my-4">
+                  <img
+                    src="../assets/logo-tari.png"
+                    class="w-[210px] h-[210px] lg:w-[230px] lg:h-[230px] xl:w-[260px] xl:h-[260px]  items-center object-cover object-center"
+                  />
+                  <div class="ml-6 xl:ml-8">
+                    <h1 class="text-white font-semibold text-[19px] lg:text-[22px]  xl:text-[26px]">
+                      Tari Daerah SMA Tanjung Priok
+                    </h1>
+                    <p
+                      class=" text-white font-light text-[14.5px] lg:text-base xl:text-lg mt-3"
+                    >
+                    Tari daerah SMA Tanjung Priok adalah salah satu kegiatan yang memungkinkan siswa untuk mempelajari dan mempertahankan warisan budaya tari daerah Indonesia.
+                    </p>
+                    <div class="mt-4 flex">
+                      <a href="#">
+                        <p class="text-[14.5px] lg:text-base xl:text-[17px] font-medium text-white underline">
+                          Selengkapnya
+                        </p>
+                      </a>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                        class="mt-[3px] ml-1 w-4 h-4"
+                        fill="#fff"
+                      >
+                        <path
+                          d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          <button onclick="next2()" class="rounded-full  p-1 ml-4 lg:ml-6 xl:ml-8 transition ease-in-out hover:scale-110">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              class="w-8 h-8 lg:w-10 lg:h-10"
+              fill="white"
+            >
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+              />
+            </svg>
+          </button>
+        </div>
+        <script>
+          currentSlideID = 1;
+          sliderElement = document.getElementById("slider2");
+          totalSlides = sliderElement.childElementCount;
+
+          function next2() {
+            if (currentSlideID < totalSlides) {
+              currentSlideID++;
+              showSlide();
+            }
+          }
+          function prev2() {
+            if (currentSlideID > 1) {
+              currentSlideID--;
+              showSlide();
+            }
+          }
+          function showSlide() {
+            slides = document
+              .getElementById("slider2")
+              .getElementsByTagName("li");
+            for (let index = 0; index < totalSlides; index++) {
+              const element = slides[index];
+              if (currentSlideID === index + 1) {
+                element.classList.remove("hidden");
+              } else {
+                element.classList.add("hidden");
+              }
+            }
+          }
+        </script>
+      </div>
+    </section>
+
+    
+    <section>
+
     </section>
   </body>
 </html>
