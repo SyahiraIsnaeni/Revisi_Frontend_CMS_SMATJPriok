@@ -347,7 +347,7 @@
     </section>
 
     <!-- EKSTRAKURIKULER -->
-    <section class="relative mt-16 sm:mt-20 h-[430px] sm:h-[450px] md:h-[400px] lg:h-[420px] xl:h-[450px]">
+    <section class="relative mt-16 sm:mt-20 h-[430px] sm:h-[450px] md:h-[400px] lg:h-[420px] xl:h-[490px]">
       <!-- Div untuk overlay warna -->
       <div
         class="absolute top-0 left-0 w-full h-full bg-[#0D464B] bg-opacity-90 z-10"
@@ -356,7 +356,7 @@
       <img
         src="../assets/school-AI1.jpg"
         alt="School"
-        class="top-0 left-0 w-full z-0 opacity-80 object-cover object-center h-[430px] sm:h-[450px] md:h-[400px] lg:h-[420px] xl:h-[450px]"
+        class="top-0 left-0 w-full z-0 opacity-80 object-cover object-center h-[430px] sm:h-[450px] md:h-[400px] lg:h-[420px] xl:h-[490px]"
       />
       <!-- TAMPILAN HP -->
       <div class="block md:hidden absolute top-0 left-0 w-full my-8 z-20">
@@ -467,7 +467,7 @@
         </ul>
         <!-- INI UNTUK PANAH KANAN DAN KIRI -->
         <div class="flex justify-center items-center mt-5">
-          <button onclick="prev()" class="rounded-full bg-white p-1 mr-2">
+          <button onclick="prev()" class="rounded-full bg-white p-1.5 sm:p-2 mr-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 512"
@@ -478,7 +478,7 @@
               />
             </svg>
           </button>
-          <button onclick="next()" class="rounded-full bg-white p-1 ml-2">
+          <button onclick="next()" class="rounded-full bg-white p-1.5 sm:p-2 ml-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 512"
@@ -674,16 +674,16 @@
           function next2() {
             if (currentSlideID < totalSlides) {
               currentSlideID++;
-              showSlide();
+              showSlide2();
             }
           }
           function prev2() {
             if (currentSlideID > 1) {
               currentSlideID--;
-              showSlide();
+              showSlide2();
             }
           }
-          function showSlide() {
+          function showSlide2() {
             slides = document
               .getElementById("slider2")
               .getElementsByTagName("li");
@@ -700,9 +700,107 @@
       </div>
     </section>
 
-    
-    <section>
-
+    <!-- PRESTASI -->
+    <section class="my-12 sm:my-16">
+      <div class="mx-5 sm:mx-8 md:mx-10 lg:mx-16 xl:mx-20">
+        <!-- TAMPILAN HP -->
+        <div class="block md:hidden ">
+          <h1 class="font-bold text-xl sm:text-2xl text-center">Prestasi Sekolah</h1>
+          <p class="mt-3 text-sm sm:text-[15px] font-normal text-center">Telusuri pencapaian gemilang SMA Tanjung Priok Jakarta, sumber inspirasi bagi para siswa!</p>
+          <ul id="sliderPrestasi" class="flex sm:grid sm:grid-cols-2 gap-5">
+            <li class="mx-5 w-full sm:w-[300px]">
+              <a href="#">
+                <div class="justify-center items-center mt-5">
+                  <img src="../assets/paskib.jpg" class="rounded-t-md w-full h-[180px] object-cover object-center"/>
+                  <div class="bg-white rounded-b-md border border-black border-opacity-25 py-3 px-3">
+                    <h1 class="text-sm font-semibold text-center">Marion Jola Jolie</h1>
+                    <p class="mt-1 text-[12.5px] font-normal text-center">Juara 1 Lomba Panjat Tebing Putri</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hidden sm:block mx-5 w-full sm:w-[300px]">
+              <a href="#">
+                <div class="justify-center items-center mt-5">
+                  <img src="../assets/school-AI1.jpg" class="rounded-t-md w-full h-[180px] object-cover object-center"/>
+                  <div class="bg-white rounded-b-md border border-black border-opacity-25 py-3 px-3">
+                    <h1 class="text-sm font-semibold text-center">Angelina Jolie</h1>
+                    <p class="mt-1 text-[12.5px] font-normal text-center">Juara 2 Lomba Menyanyi Tingkat Nasional</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="hidden mx-5 w-full sm:w-[300px]">
+              <a href="#">
+                <div class="justify-center items-center mt-5">
+                  <img src="../assets/school-AI2.png" class="rounded-t-md w-full h-[180px] object-cover object-center"/>
+                  <div class="bg-white rounded-b-md border border-black border-opacity-25 py-3 px-3">
+                    <h1 class="text-sm font-semibold text-center">Futsal SMA Tanjung Priok</h1>
+                    <p class="mt-1 text-[12.5px] font-normal text-center">Juara 3 Futsal Seroja Cup</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="flex justify-center items-center mt-5">
+            <button onclick="prevPrestasi()" class="rounded-full bg-[#0D464B] p-1.5 sm:p-2 mr-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+                class="w-5 h-5"
+                fill="#fff"
+              >
+                <path
+                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+                />
+              </svg>
+            </button>
+            <button onclick="nextPrestasi()" class="rounded-full bg-[#0D464B] p-1.5 sm:p-2 ml-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+                class="w-5 h-5"
+                fill="#fff"
+              >
+                <path
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                />
+              </svg>
+            </button>
+          </div>
+          <script>
+            currentSlideID = 1;
+            sliderElement = document.getElementById("slider");
+            totalSlides = sliderElement.childElementCount;
+  
+            function nextPrestasi() {
+              if (currentSlideID < totalSlides) {
+                currentSlideID++;
+                showSlide();
+              }
+            }
+            function prevPrestasi() {
+              if (currentSlideID > 1) {
+                currentSlideID--;
+                showSlide();
+              }
+            }
+            function showSlide() {
+              slides = document
+                .getElementById("sliderPrestasi")
+                .getElementsByTagName("li");
+              for (let index = 0; index < totalSlides; index++) {
+                const element = slides[index];
+                if (currentSlideID === index + 1) {
+                  element.classList.remove("hidden");
+                } else {
+                  element.classList.add("hidden");
+                }
+              }
+            }
+          </script>
+        </div>
+      </div>
     </section>
   </body>
 </html>
