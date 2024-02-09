@@ -769,15 +769,15 @@
           <ul id="sliderPrestasi" class="flex gap-5">
             <li class="mx-5 w-full sm:w-[300px]">
               <a href="#">
-                <div class="justify-center items-center mt-5">
-                  <div class="border-t border-l border-r border-black border-opacity-25 rounded-md">
+                <div class="justify-center items-center mt-5 border rounded-md border-black border-opacity-25">
+                  <div class="border-b h-[180px] border-black border-opacity-25 rounded-md">
                     <img
                     src="../assets/paskib.jpg"
                     class="rounded-t-md w-full h-[180px] object-cover object-center"
                   />
                   </div>
                   <div
-                    class="bg-white rounded-b-md border border-black border-opacity-25 py-3 px-3"
+                    class="bg-white rounded-b-md py-3 px-3"
                   >
                     <h1 class="text-sm font-semibold text-center">
                       Marion Jola Jolie
@@ -791,15 +791,15 @@
             </li>
             <li class="hidden sm:block mx-5 w-full sm:w-[300px]">
               <a href="#">
-                <div class="justify-center items-center mt-5">
-                  <div class="border-t border-l border-r border-black border-opacity-25 rounded-md">
+                <div class="justify-center items-center mt-5 border rounded-md border-black border-opacity-25">
+                  <div class="border-b h-[180px] border-black border-opacity-25 rounded-md">
                     <img
                     src="../assets/school-AI1.jpg"
                     class="rounded-t-md w-full h-[180px] object-cover object-center"
                   />
                   </div>
                   <div
-                    class="bg-white rounded-b-md border border-black border-opacity-25 py-3 px-3"
+                    class="bg-white rounded-b-md  py-3 px-3"
                   >
                     <h1 class="text-sm font-semibold text-center">
                       Angelina Jolie
@@ -813,15 +813,15 @@
             </li>
             <li class="hidden mx-5 w-full sm:w-[300px]">
               <a href="#">
-                <div class="justify-center items-center mt-5">
-                  <div class="border-t border-l border-r border-black border-opacity-25 rounded-md">
+                <div class="justify-center items-center mt-5 border rounded-md border-black border-opacity-25">
+                  <div class="border-b h-[180px] border-black border-opacity-25 rounded-md">
                     <img
                     src="../assets/school-AI2.png"
                     class="rounded-t-md w-full h-[180px] object-cover object-center"
                   />
                   </div>
                   <div
-                    class="bg-white rounded-b-md border border-black border-opacity-25 py-3 px-3"
+                    class="bg-white rounded-b-md py-3 px-3"
                   >
                     <h1 class="text-sm font-semibold text-center">
                       Futsal SMA Tanjung Priok
@@ -869,22 +869,22 @@
           <script>
             if (window.innerWidth < 640) {
               currentSlideID = 1;
-              sliderElement = document.getElementById("slider");
+              sliderElement = document.getElementById("sliderPrestasi");
               totalSlides = sliderElement.childElementCount;
 
               function nextPrestasi() {
                 if (currentSlideID < totalSlides) {
                   currentSlideID++;
-                  showSlide();
+                  showSlidePrestasi();
                 }
               }
               function prevPrestasi() {
                 if (currentSlideID > 1) {
                   currentSlideID--;
-                  showSlide();
+                  showSlidePrestasi();
                 }
               }
-              function showSlide() {
+              function showSlidePrestasi() {
                 slides = document
                   .getElementById("sliderPrestasi")
                   .getElementsByTagName("li");
@@ -907,20 +907,20 @@
               function nextPrestasi() {
                 if (currentSlideID < totalSlides - 2) {
                   currentSlideID++;
-                  showSlide();
+                  showSlidePrestasi2();
                 }
               }
               function prevPrestasi() {
                 if (currentSlideID > 0) {
                   currentSlideID--;
-                  showSlide();
+                  showSlidePrestasi2();
                 } else if (currentSlideID === 0) {
                   // Tambahkan kondisi ini untuk menangani slide pertama
                   currentSlideID = 0; // Ubah currentSlideID menjadi 0 untuk menghindari slide negatif
-                  showSlide();
+                  showSlidePrestasi2();
                 }
               }
-              function showSlide() {
+              function showSlidePrestasi2() {
                 slides = document
                   .getElementById("sliderPrestasi")
                   .getElementsByTagName("li");
