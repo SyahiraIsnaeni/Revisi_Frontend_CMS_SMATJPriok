@@ -237,7 +237,7 @@
                 class="bg-[#0D464B] py-0.5 w-full absolute top-0 rounded-md"
               ></div>
               <p
-                class="text-[15px] lg:text-base xl:text-[17px] xl:tracking-wide font-normal my-5 lg:my-7 xl:my-10 text-justify"
+                class="text-[15px] lg:text-base xl:text-[17px] xl:tracking-wide lg:leading-relaxed font-normal my-5 lg:my-7 xl:my-10 text-justify"
               >
                 SMA Tanjung Priok Jakarta adalah sebuah lembaga pendidikan
                 menengah atas berakreditasi A yang berkomitmen untuk menjadi
@@ -954,18 +954,18 @@
             <div class="w-2/3 mr-8">
               <ul class="flex" id="sliderPrestasiLarge">
                 <li
-                  class="hidden mx-4 lg:mx-5 xl:mx-6 w-[230px] xl:w-[270px] opacity-60"
+                  class="hidden mr-7 lg:mr-12 xl:mr-20 w-[240px] xl:w-[280px] opacity-55"
                 >
                   <a href="#">
                     <div
-                      class="penanda justify-center items-center border rounded-md"
+                      class="penanda justify-center items-center rounded-md border border-black border-opacity-25"
                     >
                       <img
                         src="../assets/redd-f-9o8YdYGTT64-unsplash.jpg"
-                        class="rounded-t-md w-full h-[120px] lg:h-[130px] xl:h-[170px] object-cover object-center border-black border-opacity-25"
+                        class="rounded-t-md w-full h-[120px] lg:h-[140px] xl:h-[180px] object-cover object-center border-black border-opacity-25"
                       />
                       <div
-                        class="bg-white rounded-b-md py-3 px-3 lg:px-4 lg:py-4"
+                        class="bg-white rounded-b-md py-3 px-3 lg:px-4 lg:py-4 xl:py-5"
                       >
                         <h1
                           class="text-[13px] lg:text-sm xl:text-[15px] font-semibold text-center"
@@ -982,18 +982,18 @@
                   </a>
                 </li>
                 <li
-                  class="hidden mx-4 lg:mx-5 xl:mx-6 w-[230px] xl:w-[270px] opacity-60"
+                  class="hidden mr-7 lg:mr-12 xl:mr-20 w-[240px] xl:w-[280px] opacity-55"
                 >
                   <a href="#">
                     <div
-                      class="penanda justify-center items-center border rounded-md"
+                      class="penanda justify-center items-center border rounded-md border-black border-opacity-25"
                     >
                       <img
                         src="../assets/school-AI2.png"
-                        class="rounded-t-md w-full h-[120px] lg:h-[130px] xl:h-[170px] object-cover object-center border-black border-opacity-25"
+                        class="rounded-t-md w-full h-[120px] lg:h-[140px] xl:h-[180px] object-cover object-center border-black border-opacity-25"
                       />
                       <div
-                        class="bg-white rounded-b-md py-3 px-3 lg:px-4 lg:py-4"
+                        class="bg-white rounded-b-md py-3 px-3 lg:px-4 lg:py-4 xl:py-5"
                       >
                         <h1
                           class="text-[13px] lg:text-sm xl:text-[15px] font-semibold text-center"
@@ -1010,7 +1010,7 @@
                   </a>
                 </li>
                 <li
-                  class="mx-4 lg:mx-5 xl:mx-7 w-[230px] xl:w-[270px] opacity-60"
+                  class="mr-7 lg:mr-12 xl:mr-20 w-[240px] xl:w-[280px] opacity-55"
                 >
                   <a href="#">
                     <div
@@ -1018,10 +1018,10 @@
                     >
                       <img
                         src="../assets/paskib.jpg"
-                        class="w-full h-[120px] lg:h-[130px] xl:h-[170px] object-cover object-center border-b border-black border-opacity-25 rounded-t-md"
+                        class="w-full h-[120px] lg:h-[140px] xl:h-[180px] object-cover object-center border-b border-black border-opacity-25 rounded-t-md"
                       />
                       <div
-                        class="bg-white rounded-b-md py-3 px-3 lg:px-4 lg:py-4"
+                        class="bg-white rounded-b-md py-3 px-3 lg:px-4 lg:py-4 xl:py-5"
                       >
                         <h1
                           class="text-[13px] lg:text-sm xl:text-[15px] font-semibold text-center"
@@ -1037,14 +1037,14 @@
                     </div>
                   </a>
                 </li>
-                <li class="mx-4 lg:mx-5 xl:mx-7 w-[320px] xl:w-[370px]">
+                <li class="mr-7 lg:mr-12 xl:mr-20 w-[330px] xl:w-[380px]">
                   <a href="#">
                     <div
                       class="justify-center items-center border rounded-md border-black border-opacity-25"
                     >
                       <img
                         src="../assets/school-AI1.jpg"
-                        class="w-full h-[170px] lg:h-[180px] xl:h-[220px] object-cover object-center border-b border-black border-opacity-25 rounded-t-md"
+                        class="w-full h-[170px] lg:h-[190px] xl:h-[230px] object-cover object-center border-b border-black border-opacity-25 rounded-t-md"
                       />
                       <div
                         class="bg-white rounded-b-md py-3 px-3 lg:px-4 lg:py-4 xl:px-5 xl:py-5"
@@ -1115,7 +1115,7 @@
                 "sliderPrestasiLarge"
               );
               const totalSlides = sliderElement.childElementCount;
-              let currentSlideID = totalSlides - 1; 
+              let currentSlideID = totalSlides - 1;
 
               function nextPrestasiLarge() {
                 if (currentSlideID > 1) {
@@ -1139,71 +1139,31 @@
 
                 for (let index = 0; index < totalSlides; index++) {
                   const element = slides[index];
+                  const anchorTag = slides[index].querySelector("a"); // Mengambil tag <a> di dalam slide
 
                   if (index === currentSlideID) {
+                    // Menampilkan slide saat ini
                     slides[index].classList.remove("hidden");
-                    slides[index+1].classList.remove(
-                      "w-[230px]",
-                      "xl:w-[270px]",
-                      "opacity-60",
-                      "mt-5", "lg:mt-6"
+                    slides[index].classList.remove(
+                      "w-[240px]",
+                      "xl:w-[280px]",
+                      "opacity-55",
+                      "mt-5",
+                      "lg:mt-6",
+                      "xl:mt-7"
                     );
-                    textH1[index+1].classList.remove(
+                    slides[index].classList.add(
+                      "w-[330px]",
+                      "xl:w-[380px]",
+                      "opacity-100",
+                      "mt-0"
+                    );
+                    textH1[index].classList.remove(
                       "text-[13px]",
                       "lg:text-sm",
                       "xl:text-[15px]"
                     );
-                    textP[index+1].classList.remove(
-                      "text-[11px]",
-                      "lg:text-xs",
-                      "xl:text-sm",
-                      "mt-1",
-                      "lg:mt-1.5"
-                    );
-                    high[index+1].classList.remove(
-                      "h-[120px]",
-                      "lg:h-[130px]",
-                      "xl:h-[170px]"
-                    );
-
-                    slides[index+1].classList.add(
-                      "w-[320px]",
-                      "xl:w-[370px]",
-                      "opacity-100",
-                      "mt-0"
-                    );
-                    textH1[index+1].classList.add(
-                      "text-sm",
-                      "lg:text-[15px]",
-                      "xl:text-[17px]"
-                    );
-                    textP[index+1].classList.add(
-                      "text-xs",
-                      "lg:text-[13px]",
-                      "xl:text-[15px]",
-                      "mt-1",
-                      "lg:mt-1.5",
-                      "xl:mt-2"
-                    );
-                    high[index+1].classList.add(
-                      "h-[170px]",
-                      "lg:h-[180px]",
-                      "xl:h-[220px]"
-                    );
-                  } else if (index === currentSlideID - 1) {
-                    slides[index].classList.remove("hidden");
-                    slides[index+1].classList.add(
-                      "w-[320px]",
-                      "xl:w-[370px]",
-                      "opacity-100",
-                      "mt-0"
-                    );
-                    textH1[index+1].classList.remove(
-                      "text-[13px]",
-                      "lg:text-sm",
-                      "xl:text-[15px]"
-                    );
-                    textP[index+1].classList.remove(
+                    textP[index].classList.remove(
                       "text-[11px]",
                       "lg:text-xs",
                       "xl:text-sm",
@@ -1212,18 +1172,65 @@
                     );
                     high[index].classList.remove(
                       "h-[120px]",
-                      "lg:h-[130px]",
-                      "xl:h-[170px]"
+                      "lg:h-[140px]",
+                      "xl:h-[180px]"
                     );
-                    
+                    textH1[index].classList.add(
+                      "text-sm",
+                      "lg:text-[15px]",
+                      "xl:text-[17px]"
+                    );
+                    textP[index].classList.add(
+                      "text-xs",
+                      "lg:text-[13px]",
+                      "xl:text-[15px]",
+                      "mt-1",
+                      "lg:mt-1.5",
+                      "xl:mt-2"
+                    );
+                    high[index].classList.add(
+                      "h-[170px]",
+                      "lg:h-[190px]",
+                      "xl:h-[230px]"
+                    );
 
+                    // Menghilangkan kemampuan klik pada tag <a>
+                    anchorTag.setAttribute("href", "#");
+                  } else if (index === currentSlideID - 1) {
+                    // Menampilkan slide sebelumnya
+                    slides[index].classList.remove("hidden");
+                    slides[index].classList.remove(
+                      "w-[330px]",
+                      "xl:w-[380px]",
+                      "opacity-100",
+                      "mt-0"
+                    );
                     slides[index].classList.add(
-                      "w-[230px]",
-                      "xl:w-[270px]",
-                      "opacity-60",
-                      "mt-5", "lg:mt-6"
+                      "w-[240px]",
+                      "xl:w-[280px]",
+                      "opacity-55",
+                      "mt-5",
+                      "lg:mt-6",
+                      "xl:mt-7"
                     );
-
+                    textH1[index].classList.remove(
+                      "text-sm",
+                      "lg:text-[15px]",
+                      "xl:text-[17px]"
+                    );
+                    textP[index].classList.remove(
+                      "text-xs",
+                      "lg:text-[13px]",
+                      "xl:text-[15px]",
+                      "mt-1",
+                      "lg:mt-1.5",
+                      "xl:mt-2"
+                    );
+                    high[index].classList.remove(
+                      "h-[170px]",
+                      "lg:h-[190px]",
+                      "xl:h-[230px]"
+                    );
                     textH1[index].classList.add(
                       "text-[13px]",
                       "lg:text-sm",
@@ -1238,10 +1245,14 @@
                     );
                     high[index].classList.add(
                       "h-[120px]",
-                      "lg:h-[130px]",
-                      "xl:h-[170px]"
+                      "lg:h-[140px]",
+                      "xl:h-[180px]"
                     );
+
+                    // Menonaktifkan tag <a>
+                    anchorTag.removeAttribute("href");
                   } else {
+                    // Menyembunyikan slide lainnya
                     slides[index].classList.add("hidden");
                   }
                 }
