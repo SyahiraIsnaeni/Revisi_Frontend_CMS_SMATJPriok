@@ -1747,8 +1747,21 @@ video {
     height: 100lvh;
   }
 
+  .md\:h-auto{
+    height: auto;
+  }
+
   .md\:w-\[40px\]{
     width: 40px;
+  }
+
+  .md\:max-w-full{
+    max-width: 100%;
+  }
+
+  .md\:object-cover{
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .md\:py-5{
@@ -1915,6 +1928,10 @@ video {
     height: 100lvh;
   }
 
+  .lg\:h-\[342px\]{
+    height: 342px;
+  }
+
   .lg\:w-10{
     width: 2.5rem;
   }
@@ -1933,6 +1950,10 @@ video {
 
   .lg\:w-\[48px\]{
     width: 48px;
+  }
+
+  .lg\:w-\[277px\]{
+    width: 277px;
   }
 
   .lg\:grid-cols-3{
