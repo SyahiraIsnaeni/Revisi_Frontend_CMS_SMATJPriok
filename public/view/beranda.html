@@ -1567,7 +1567,7 @@
                   </a>
                 </li>
                 <li
-                  class="ml-7 lg:ml-12 xl:ml-20 w-[240px] xl:w-[280px] opacity-55"
+                  class="ml-7 lg:ml-12 xl:ml-20 w-[240px] xl:w-[280px] opacity-55 mt-5 lg:mt-6 xl:mt-7"
                 >
                   <a href="#">
                     <div
@@ -1658,11 +1658,11 @@
               );
               const totalSlidesPengumuman3 =
                 sliderElementPengumuman.childElementCount;
-              let currentSlideIDPengumuman3 = totalSlidesPengumuman3 - 1;
+              let currentSlideIDPengumuman3 = 0;
 
               function nextPengumumanLarge() {
-                if (currentSlideIDPengumuman3 < totalSlidesPengumuman3 - 2) {
-                  currentSlideIDPengumuman3++;
+                if (currentSlideIDPengumuman3 > 0) {
+                  currentSlideIDPengumuman3--;
                 } else {
                   // Jika sudah mencapai batas akhir, jangan lakukan apa-apa
                   return;
@@ -1670,8 +1670,8 @@
                 showSlidePengumuman3();
               }
               function prevPengumumanLarge() {
-                if (currentSlideIDPengumuman3 > 1) {
-                  currentSlideIDPengumuman3--;
+                if (currentSlideIDPengumuman3 < totalSlidesPengumuman3 - 2) {
+                  currentSlideIDPengumuman3++;
                 } else {
                   // Jika sudah mencapai awal, jangan lakukan apa-apa
                   return;
@@ -1689,7 +1689,7 @@
                 const highPengumuman =
                   sliderElementPengumuman.getElementsByTagName("img");
 
-                for (let index = 0; index < totalSlidesPengumuman3; index++) {
+                for (let index = 0 ; index <= totalSlidesPengumuman3; index++) {
                   const element = slidesPengumuman3[index];
                   const anchorTag = slidesPengumuman3[index].querySelector("a"); // Mengambil tag <a> di dalam slide
 
