@@ -2646,6 +2646,10 @@ video {
     font-size: 14.5px;
   }
 
+  .xl\:text-\[13\.5px\]{
+    font-size: 13.5px;
+  }
+
   .xl\:leading-8{
     line-height: 2rem;
   }
