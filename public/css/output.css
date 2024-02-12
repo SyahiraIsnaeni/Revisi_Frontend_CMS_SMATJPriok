@@ -2019,6 +2019,10 @@ video {
     padding-top: 2rem;
   }
 
+  .md\:pt-10{
+    padding-top: 2.5rem;
+  }
+
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2320,6 +2324,18 @@ video {
     padding-top: 2.5rem;
   }
 
+  .lg\:pt-12{
+    padding-top: 3rem;
+  }
+
+  .lg\:pb-3{
+    padding-bottom: 0.75rem;
+  }
+
+  .lg\:pb-3\.5{
+    padding-bottom: 0.875rem;
+  }
+
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2590,6 +2606,26 @@ video {
 
   .xl\:pt-12{
     padding-top: 3rem;
+  }
+
+  .xl\:pt-20{
+    padding-top: 5rem;
+  }
+
+  .xl\:pt-6{
+    padding-top: 1.5rem;
+  }
+
+  .xl\:pt-16{
+    padding-top: 4rem;
+  }
+
+  .xl\:pt-\[\]{
+    padding-top: ;
+  }
+
+  .xl\:pt-\[66px\]{
+    padding-top: 66px;
   }
 
   .xl\:text-2xl{
