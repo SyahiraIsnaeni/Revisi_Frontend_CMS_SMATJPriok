@@ -1080,6 +1080,10 @@ video {
   align-items: flex-start;
 }
 
+.items-end{
+  align-items: flex-end;
+}
+
 .items-center{
   align-items: center;
 }
@@ -1207,6 +1211,10 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\]{
+  background-color: ;
 }
 
 .bg-opacity-75{
@@ -1858,6 +1866,10 @@ video {
     margin-top: 0.75rem;
   }
 
+  .md\:mt-5{
+    margin-top: 1.25rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -1918,6 +1930,16 @@ video {
   .md\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .md\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .md\:text-3xl{
@@ -2204,6 +2226,21 @@ video {
     padding-bottom: 0.5rem;
   }
 
+  .lg\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .lg\:py-2\.5{
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .lg\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2445,6 +2482,16 @@ video {
   .xl\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .xl\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .xl\:px-7{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .xl\:text-2xl{
