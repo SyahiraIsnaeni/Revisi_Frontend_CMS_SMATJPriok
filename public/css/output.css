@@ -965,6 +965,18 @@ video {
   height: 100vh;
 }
 
+.h-12{
+  height: 3rem;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
+.h-\[23px\]{
+  height: 23px;
+}
+
 .w-1{
   width: 0.25rem;
 }
@@ -1073,6 +1085,14 @@ video {
   width: 100%;
 }
 
+.w-12{
+  width: 3rem;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
 .max-w-\[90\%\]{
   max-width: 90%;
 }
@@ -1091,6 +1111,10 @@ video {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-rows-3{
@@ -1135,6 +1159,10 @@ video {
 
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .rounded-full{
@@ -1625,6 +1653,10 @@ video {
   color: rgb(255 139 66 / var(--tw-text-opacity));
 }
 
+.hover\:text-\[\]:hover{
+  color: ;
+}
+
 .hover\:transition:hover{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1983,6 +2015,10 @@ video {
     padding-bottom: 0.75rem;
   }
 
+  .md\:pt-8{
+    padding-top: 2rem;
+  }
+
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2022,6 +2058,10 @@ video {
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .md\:text-\[12\.5px\]{
+    font-size: 12.5px;
   }
 }
 
@@ -2272,6 +2312,14 @@ video {
     padding-bottom: 1.75rem;
   }
 
+  .lg\:pt-8{
+    padding-top: 2rem;
+  }
+
+  .lg\:pt-10{
+    padding-top: 2.5rem;
+  }
+
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2339,12 +2387,24 @@ video {
     line-height: 1rem;
   }
 
+  .lg\:text-\[13\.5px\]{
+    font-size: 13.5px;
+  }
+
   .lg\:leading-relaxed{
     line-height: 1.625;
   }
 
   .lg\:tracking-normal{
     letter-spacing: 0em;
+  }
+
+  .lg\:text-\[\]{
+    color: ;
+  }
+
+  .lg\:text-\[14\.5p\]{
+    color: 14.5p;
   }
 }
 
@@ -2449,6 +2509,10 @@ video {
     margin-top: 49px;
   }
 
+  .xl\:ml-16{
+    margin-left: 4rem;
+  }
+
   .xl\:block{
     display: block;
   }
@@ -2520,6 +2584,14 @@ video {
     padding-bottom: 1.25rem;
   }
 
+  .xl\:pt-10{
+    padding-top: 2.5rem;
+  }
+
+  .xl\:pt-12{
+    padding-top: 3rem;
+  }
+
   .xl\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2568,6 +2640,10 @@ video {
   .xl\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .xl\:text-\[14\.5px\]{
+    font-size: 14.5px;
   }
 
   .xl\:leading-8{
