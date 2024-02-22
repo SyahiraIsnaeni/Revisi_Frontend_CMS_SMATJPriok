@@ -2622,6 +2622,14 @@ video {
     margin-top: 66px;
   }
 
+  .xl\:mt-\[\]{
+    margin-top: ;
+  }
+
+  .xl\:mt-\[50px\]{
+    margin-top: 50px;
+  }
+
   .xl\:block{
     display: block;
   }
