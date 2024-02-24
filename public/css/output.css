@@ -546,6 +546,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.pointer-events-none{
+  pointer-events: none;
+}
+
 .absolute{
   position: absolute;
 }
@@ -558,13 +562,13 @@ video {
   position: sticky;
 }
 
+.inset-0{
+  inset: 0px;
+}
+
 .inset-x-0{
   left: 0px;
   right: 0px;
-}
-
-.-bottom-0{
-  bottom: -0px;
 }
 
 .-bottom-5{
@@ -595,16 +599,24 @@ video {
   top: 0px;
 }
 
-.-bottom-3{
-  bottom: -0.75rem;
+.-top-6{
+  top: -1.5rem;
 }
 
-.-bottom-4{
-  bottom: -1rem;
+.-top-14{
+  top: -3.5rem;
 }
 
-.-bottom-3\.5{
-  bottom: -0.875rem;
+.-top-8{
+  top: -2rem;
+}
+
+.-top-10{
+  top: -2.5rem;
+}
+
+.-top-0{
+  top: -0px;
 }
 
 .z-0{
@@ -670,11 +682,6 @@ video {
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.mx-0{
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 .-ml-8{
@@ -863,18 +870,6 @@ video {
 
 .mt-auto{
   margin-top: auto;
-}
-
-.ml-12{
-  margin-left: 3rem;
-}
-
-.mr-0{
-  margin-right: 0px;
-}
-
-.mt-14{
-  margin-top: 3.5rem;
 }
 
 .block{
@@ -1126,12 +1121,22 @@ video {
   width: 100%;
 }
 
-.w-\[380px\]{
-  width: 380px;
-}
-
 .flex-1{
   flex: 1 1 0%;
+}
+
+.translate-y-\[-20\%\]{
+  --tw-translate-y: -20%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[20\%\]{
+  --tw-translate-y: 20%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer{
@@ -1196,6 +1201,10 @@ video {
 
 .gap-5{
   gap: 1.25rem;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .rounded-full{
@@ -1336,16 +1345,6 @@ video {
 .object-center{
   -o-object-position: center;
      object-position: center;
-}
-
-.object-left{
-  -o-object-position: left;
-     object-position: left;
-}
-
-.object-right{
-  -o-object-position: right;
-     object-position: right;
 }
 
 .p-1{
@@ -2364,10 +2363,6 @@ video {
     height: 620px;
   }
 
-  .lg\:h-\[320px\]{
-    height: 320px;
-  }
-
   .lg\:w-10{
     width: 2.5rem;
   }
@@ -2674,10 +2669,6 @@ video {
     margin-top: 66px;
   }
 
-  .xl\:mt-20{
-    margin-top: 5rem;
-  }
-
   .xl\:block{
     display: block;
   }
@@ -2726,10 +2717,6 @@ video {
     height: 780px;
   }
 
-  .xl\:h-\[360px\]{
-    height: 360px;
-  }
-
   .xl\:w-\[260px\]{
     width: 260px;
   }
@@ -2742,21 +2729,13 @@ video {
     width: 380px;
   }
 
-  .xl\:w-\[430px\]{
-    width: 430px;
-  }
-
-  .xl\:w-full{
-    width: 100%;
-  }
-
   .xl\:gap-7{
     gap: 1.75rem;
   }
 
-  .xl\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .xl\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .xl\:px-5{
@@ -2769,24 +2748,14 @@ video {
     padding-right: 1.75rem;
   }
 
-  .xl\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  .xl\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .xl\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-
-  .xl\:px-3{
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-
-  .xl\:py-3{
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
   }
 
   .xl\:pb-7{
