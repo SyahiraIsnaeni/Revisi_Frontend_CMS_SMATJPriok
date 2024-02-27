@@ -558,17 +558,17 @@ video {
   position: sticky;
 }
 
+.inset-0{
+  inset: 0px;
+}
+
 .inset-x-0{
   left: 0px;
   right: 0px;
 }
 
-.-bottom-0{
-  bottom: -0px;
-}
-
-.-bottom-7{
-  bottom: -1.75rem;
+.-bottom-5{
+  bottom: -1.25rem;
 }
 
 .-left-28{
@@ -1163,10 +1163,6 @@ video {
 
 .gap-5{
   gap: 1.25rem;
-}
-
-.rounded-2xl{
-  border-radius: 1rem;
 }
 
 .rounded-full{
@@ -2076,6 +2072,10 @@ video {
     max-width: 100%;
   }
 
+  .md\:gap-8{
+    gap: 2rem;
+  }
+
   .md\:object-cover{
     -o-object-fit: cover;
        object-fit: cover;
@@ -2357,6 +2357,10 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:gap-16{
+    gap: 4rem;
+  }
+
   .lg\:gap-6{
     gap: 1.5rem;
   }
@@ -2367,6 +2371,11 @@ video {
 
   .lg\:p-3{
     padding: 0.75rem;
+  }
+
+  .lg\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .lg\:px-4{
@@ -2686,8 +2695,17 @@ video {
     width: 380px;
   }
 
+  .xl\:gap-20{
+    gap: 5rem;
+  }
+
   .xl\:gap-7{
     gap: 1.75rem;
+  }
+
+  .xl\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .xl\:px-5{
@@ -2698,6 +2716,11 @@ video {
   .xl\:px-7{
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+  }
+
+  .xl\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .xl\:py-5{
@@ -2801,5 +2824,11 @@ video {
 
   .xl\:tracking-wide{
     letter-spacing: 0.025em;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:gap-28{
+    gap: 7rem;
   }
 }
