@@ -2600,10 +2600,6 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .lg\:gap-12{
-    gap: 3rem;
-  }
-
   .lg\:gap-16{
     gap: 4rem;
   }
@@ -2960,6 +2956,10 @@ video {
 
   .xl\:w-\[380px\]{
     width: 380px;
+  }
+
+  .xl\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .xl\:gap-16{
