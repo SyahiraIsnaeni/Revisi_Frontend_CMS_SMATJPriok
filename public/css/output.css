@@ -2186,6 +2186,10 @@ video {
     margin-top: 2rem;
   }
 
+  .md\:mt-2\.5{
+    margin-top: 0.625rem;
+  }
+
   .md\:block{
     display: block;
   }
