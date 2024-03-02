@@ -2492,6 +2492,10 @@ video {
     margin-top: 48px;
   }
 
+  .lg\:mt-\[5px\]{
+    margin-top: 5px;
+  }
+
   .lg\:h-10{
     height: 2.5rem;
   }
