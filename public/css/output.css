@@ -2668,6 +2668,10 @@ video {
     margin-top: 5px;
   }
 
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:h-10{
     height: 2.5rem;
   }
