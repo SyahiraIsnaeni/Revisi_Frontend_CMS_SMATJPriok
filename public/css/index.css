@@ -2166,6 +2166,10 @@ video {
     margin-top: 0.5rem;
   }
 
+  .md\:mt-2\.5{
+    margin-top: 0.625rem;
+  }
+
   .md\:mt-3{
     margin-top: 0.75rem;
   }
@@ -2466,10 +2470,6 @@ video {
 
   .lg\:mt-3{
     margin-top: 0.75rem;
-  }
-
-  .lg\:mt-3\.5{
-    margin-top: 0.875rem;
   }
 
   .lg\:mt-4{
