@@ -1876,6 +1876,10 @@ video {
   opacity: 0.95;
 }
 
+.opacity-0{
+  opacity: 0;
+}
+
 .shadow-md{
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1960,6 +1964,10 @@ video {
 
 .hover\:opacity-50:hover{
   opacity: 0.5;
+}
+
+.hover\:opacity-100:hover{
+  opacity: 1;
 }
 
 .hover\:transition:hover{
@@ -2446,6 +2454,10 @@ video {
     gap: 2rem;
   }
 
+  .md\:gap-7{
+    gap: 1.75rem;
+  }
+
   .md\:gap-y-12{
     row-gap: 3rem;
   }
@@ -2929,6 +2941,10 @@ video {
     letter-spacing: 0em;
   }
 
+  .lg\:text-\[\]{
+    color: ;
+  }
+
   .lg\:decoration-4{
     text-decoration-thickness: 4px;
   }
@@ -3136,6 +3152,10 @@ video {
 
   .xl\:gap-7{
     gap: 1.75rem;
+  }
+
+  .xl\:gap-10{
+    gap: 2.5rem;
   }
 
   .xl\:px-3{
