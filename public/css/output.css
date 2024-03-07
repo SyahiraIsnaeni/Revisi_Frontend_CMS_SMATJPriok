@@ -1020,6 +1020,10 @@ video {
   height: 100px;
 }
 
+.h-\[\]{
+  height: ;
+}
+
 .max-h-\[300px\]{
   max-height: 300px;
 }
