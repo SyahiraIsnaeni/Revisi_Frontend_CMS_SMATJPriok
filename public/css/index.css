@@ -1112,12 +1112,20 @@ video {
   width: 180px;
 }
 
+.w-\[200px\]{
+  width: 200px;
+}
+
 .w-\[210px\]{
   width: 210px;
 }
 
 .w-\[240px\]{
   width: 240px;
+}
+
+.w-\[250px\]{
+  width: 250px;
 }
 
 .w-\[330px\]{
@@ -1561,6 +1569,10 @@ video {
 
 .indent-10{
   text-indent: 2.5rem;
+}
+
+.indent-\[45px\]{
+  text-indent: 45px;
 }
 
 .font-cms{
@@ -2245,6 +2257,10 @@ video {
     margin-top: 1.5rem;
   }
 
+  .md\:mt-7{
+    margin-top: 1.75rem;
+  }
+
   .md\:mt-8{
     margin-top: 2rem;
   }
@@ -2327,6 +2343,10 @@ video {
 
   .md\:w-9\/12{
     width: 75%;
+  }
+
+  .md\:w-\[270px\]{
+    width: 270px;
   }
 
   .md\:w-\[380px\]{
@@ -2448,6 +2468,10 @@ video {
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .md\:leading-relaxed{
+    line-height: 1.625;
   }
 }
 
@@ -2689,6 +2713,10 @@ video {
     width: 24px;
   }
 
+  .lg\:w-\[300px\]{
+    width: 300px;
+  }
+
   .lg\:w-\[440px\]{
     width: 440px;
   }
@@ -2798,6 +2826,10 @@ video {
 
   .lg\:pt-12{
     padding-top: 3rem;
+  }
+
+  .lg\:indent-\[55px\]{
+    text-indent: 55px;
   }
 
   .lg\:text-2xl{
@@ -3069,6 +3101,10 @@ video {
 
   .xl\:w-\[280px\]{
     width: 280px;
+  }
+
+  .xl\:w-\[320px\]{
+    width: 320px;
   }
 
   .xl\:w-\[380px\]{
