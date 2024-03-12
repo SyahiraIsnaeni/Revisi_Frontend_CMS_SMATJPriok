@@ -848,6 +848,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-\[18px\]{
+  margin-top: 18px;
+}
+
 .mt-\[1px\]{
   margin-top: 1px;
 }
@@ -914,6 +918,10 @@ video {
 
 .h-8{
   height: 2rem;
+}
+
+.h-\[100px\]{
+  height: 100px;
 }
 
 .h-\[1150px\]{
