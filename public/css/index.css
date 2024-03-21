@@ -872,6 +872,10 @@ video {
   margin-top: 50px;
 }
 
+.mt-\[9px\]{
+  margin-top: 9px;
+}
+
 .mt-auto{
   margin-top: auto;
 }
@@ -922,6 +926,10 @@ video {
 
 .h-8{
   height: 2rem;
+}
+
+.h-\[0\.5px\]{
+  height: 0.5px;
 }
 
 .h-\[100px\]{
@@ -1118,6 +1126,10 @@ video {
 
 .w-\[100px\]{
   width: 100px;
+}
+
+.w-\[110px\]{
+  width: 110px;
 }
 
 .w-\[130px\]{
@@ -1322,6 +1334,11 @@ video {
   background-color: rgb(13 70 75 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#18A0FB\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 160 251 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#E5F3EF\]{
   --tw-bg-opacity: 1;
   background-color: rgb(229 243 239 / var(--tw-bg-opacity));
@@ -1465,6 +1482,11 @@ video {
   padding: 1rem;
 }
 
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1563,6 +1585,10 @@ video {
 
 .pl-3{
   padding-left: 0.75rem;
+}
+
+.pt-12{
+  padding-top: 3rem;
 }
 
 .pt-6{
@@ -1834,6 +1860,16 @@ video {
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.placeholder\:px-1::-moz-placeholder{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.placeholder\:px-1::placeholder{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .placeholder\:text-\[13px\]::-moz-placeholder{
@@ -2795,6 +2831,10 @@ video {
 
   .lg\:h-\[620px\]{
     height: 620px;
+  }
+
+  .lg\:w-1\/2{
+    width: 50%;
   }
 
   .lg\:w-1\/3{
